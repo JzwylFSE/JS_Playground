@@ -1,0 +1,111 @@
+/* Container for the Counter */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Home Link Styling */
+.homeLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #554ec0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.homeLink:hover {
+  color: #332599;
+  text-decoration: none;
+}
+
+/* Counter Label */
+.countLabel {
+  font-size: 6rem;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: #222;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.countLabel.positive {
+  color: #28a745;
+}
+
+.countLabel.negative {
+  color: #dc3545;
+}
+
+.countLabel.zero {
+  color: #555;
+}
+
+/* Button Container */
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Buttons */
+.btns {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #554ec0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btns:hover {
+  background-color: #332599;
+  transform: scale(1.05);
+}
+
+.btns:active {
+  transform: scale(0.95);
+}
+
+.btns.decrease {
+  background-color: #dc3545;
+}
+
+.btns.decrease:hover {
+  background-color: #a71d2f;
+}
+
+.btns.reset {
+  background-color: #ffc107;
+  color: #222;
+}
+
+.btns.reset:hover {
+  background-color: #e0a800;
+}
+
+.btns.increase {
+  background-color: #28a745;
+}
+
+.btns.increase:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .countLabel {
+    font-size: 4.5rem;
+  }
+
+  .btns {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+/* Dice Roller Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Home Link Styling */
+.homeLink {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #554ec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+.homeLink:hover {
+  color: #332599;
+  text-decoration: none;
+}
+
+/* Input Field */
+.input {
+  font-size: 1.5rem;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #554ec0;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #332599;
+  box-shadow: 0 0 10px rgba(85, 78, 192, 0.5);
+}
+
+/* Button Styling */
+.button {
+  font-size: 1.3rem;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: #1e7e34;
+}
+
+/* Dice Result */
+.diceResult {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Dice Images */
+.diceImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.diceImages img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diceImages img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input {
+    font-size: 1.2rem;
+    width: 80px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .diceImages img {
+    width: 70px;
+    height: 70px;
+  }
+}

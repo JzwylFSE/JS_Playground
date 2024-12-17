@@ -1,0 +1,113 @@
+  .homeLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: hsl(217, 71%, 53%);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .homeLink:hover {
+    color: hsl(217, 71%, 63%);
+  }
+  
+  /* Calculator container */
+  .calculator {
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px hsl(0, 0%, 70%);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Display screen */
+  .display {
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: inset 0 4px 6px hsl(0, 0%, 10%);
+  }
+  
+  /* Button grid */
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* General button styling */
+  button {
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 95%);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: hsl(0, 0%, 40%);
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: hsl(0, 0%, 50%);
+  }
+  
+  /* Operator button styling */
+  .operatorBtn {
+    background-color: hsl(39, 100%, 50%);
+  }
+  
+  .operatorBtn:hover {
+    background-color: hsl(39, 100%, 60%);
+  }
+  
+  .operatorBtn:active {
+    background-color: hsl(39, 100%, 70%);
+  }
+  
+  /* Equals button styling */
+  .equalsBtn {
+    background-color: hsl(217, 71%, 53%);
+    color: white;
+    grid-column: span 2; /* Spans two columns */
+  }
+  
+  .equalsBtn:hover {
+    background-color: hsl(217, 71%, 63%);
+  }
+  
+  .equalsBtn:active {
+    background-color: hsl(217, 71%, 73%);
+  }
+  
+  /* Clear button styling */
+  .clearBtn {
+    background-color: hsl(0, 71%, 53%);
+    color: white;
+    grid-column: span 2; /* Spans two columns */
+  }
+  
+  .clearBtn:hover {
+    background-color: hsl(0, 71%, 63%);
+  }
+  
+  .clearBtn:active {
+    background-color: hsl(0, 71%, 73%);
+  }
+  

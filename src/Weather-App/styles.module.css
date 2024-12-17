@@ -1,0 +1,143 @@
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensures full-page height */
+  box-shadow: inset 0 0 15px hsl(0, 0%, 80%); /* Subtle background shadow */
+}
+
+.weatherForm {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Responsive design for smaller screens */
+}
+
+.cityInput {
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 20%);
+  border-radius: 5px;
+  width: 300px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.cityInput:focus {
+  border-color: hsl(122, 39%, 50%);
+  box-shadow: 0 0 10px hsl(122, 39%, 50%);
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submitButton:hover {
+  background-color: hsl(122, 39%, 40%);
+  transform: translateY(-2px); /* Subtle elevation effect */
+  box-shadow: 0 4px 8px hsl(0, 0%, 60%);
+}
+
+.card {
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px hsl(0, 0%, 0%, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 15px hsl(0, 0%, 0%, 0.4);
+}
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 2.5rem; /* Increased size for better readability */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.weatherEmoji {
+  font-size: 4rem;
+  animation: bounce 1.5s infinite; /* Adds a fun bounce animation */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.errorDisplay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 50%);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.homeLink {
+  font-size: 1.5rem;
+  color: hsl(122, 39%, 50%);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.homeLink:hover {
+  color: hsl(122, 39%, 40%);
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .cityInput {
+    width: 100%;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .cityDisplay,
+  .tempDisplay,
+  .descDisplay {
+    font-size: 1.8rem;
+  }
+
+  .weatherEmoji {
+    font-size: 3rem;
+  }
+}
