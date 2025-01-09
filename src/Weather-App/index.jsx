@@ -67,6 +67,7 @@ export default function WeatherApp() {
       <Link to="/" className={styles.homeLink}>
         Home
       </Link>
+      <h2>You might have to generate your own API Key for the Weather App to work</h2>
       <form className={styles.weatherForm} onSubmit={handleSubmit}>
         <input
           type="text"
